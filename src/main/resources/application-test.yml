@@ -7,12 +7,12 @@ my:
  greeting: Hello world
  list:
   values: One,Two,Three
- dbValues: "{connectionString: 'http://____', userName: 'root', password: 'pass'}"
+ #dbValues: "{connectionString: 'http://____', userName: 'root', password: 'pass'}"
 
 db:
-  connection: "{connectionString: 'http://____', userName: 'root', password: 'pass'}"
-  host: 127.0.0.1
-  port: 1200
+  connection: test-connection-string-here
+  host: 129.0.0.1
+  port: 2400
 
 # expose all endpoints that actuator provides
 management.endpoints.web.exposure.include: "*"

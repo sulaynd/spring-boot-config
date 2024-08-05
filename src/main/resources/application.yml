@@ -1,13 +1,24 @@
-spring.application.name=spring-boot-config
-spring.application.description=Welcome to ${spring.application.name}
+spring:
+  application:
+    name: spring-boot-config
+    description: Welcome to ${spring.application.name}
+  profiles:
+    active: test
 
-my.greeting=Hello world
-my.list.values=One,Two,Three
-dbValues={connectionString: 'http://____', userName: 'root', password: 'pass'} 
+  cloud:
+    config:
+      uri: http://localhost:8888
 
-db.connection={connectionString: 'http://____', userName: 'root', password: 'pass'} 
-db.host=127.0.0.1
-db.port=1200
+my:
+ greeting: Hello world
+ list:
+  values: One,Two,Three
+ #dbValues: "{connectionString: 'http://____', userName: 'root', password: 'pass'}"
+
+db:
+  connection: default-connection-string-here
+  host: 127.0.0.1
+  port: 1200
 
 # expose all endpoints that actuator provides
-management.endpoints.web.exposure.include=*
+management.endpoints.web.exposure.include: "*"
