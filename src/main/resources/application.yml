@@ -1,0 +1,13 @@
+spring.application.name=spring-boot-config
+spring.application.description=Welcome to ${spring.application.name}
+
+my.greeting=Hello world
+my.list.values=One,Two,Three
+dbValues={connectionString: 'http://____', userName: 'root', password: 'pass'} 
+
+db.connection={connectionString: 'http://____', userName: 'root', password: 'pass'} 
+db.host=127.0.0.1
+db.port=1200
+
+# expose all endpoints that actuator provides
+management.endpoints.web.exposure.include=*
